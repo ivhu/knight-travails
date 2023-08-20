@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #3f3d39;
+  font-size: 16px;
+}
+
+.container {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.msg {
+  grid-column: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 70px;
+  color: white;
+}
+
+.header {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.travail-btn,
+.reset-btn {
+  width: 100px;
+  padding: 5px;
+  font-style: italic;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.square {
+  border: none;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.board {
+  width: 560px;
+  height: 560px;
+  display: grid;
+  grid-template-rows: repeat(8, 70px);
+  grid-template-columns: repeat(8, 70px);
+  border: 3px solid white;
+}
+
+p {
+  text-align: center;
+}
