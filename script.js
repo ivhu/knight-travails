@@ -143,7 +143,12 @@ const findShortestPath = (
 };
 
 function printPath(path) {
-  let msg = `<p>You made it in ${path.length - 1} moves! Here's your path:</p>`;
+  let msg = '';
+  if (path.length - 1 == 1) {
+    msg = `<p>You made it in 1 move! Here's your path:</p>`;
+  } else {
+    msg = `<p>You made it in ${path.length - 1} moves! Here's your path:</p>`;
+  }
   for (let i = 0; i < path.length; i++) {
     msg += `<p>${chessNotation(path[i])}</p>`;
   }
@@ -256,4 +261,5 @@ resetBtn.addEventListener('click', () => {
     square.style.filter = 'brightness(1)';
     square.textContent = '';
   }
+  document.querySelector('.msg').innerHTML = '';
 });

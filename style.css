@@ -29,6 +29,7 @@ body {
   font-size: 40px;
   font-weight: bold;
   color: white;
+  text-shadow: 1px 1px 2px gray;
 }
 
 .buttons {
@@ -56,6 +57,20 @@ body {
   grid-template-rows: repeat(8, 70px);
   grid-template-columns: repeat(8, 70px);
   border: 3px solid white;
+  border-radius: 10px;
+}
+
+#a8 {
+  border-top-left-radius: 6px;
+}
+#h8 {
+  border-top-right-radius: 6px;
+}
+#a1 {
+  border-bottom-left-radius: 6px;
+}
+#h1 {
+  border-bottom-right-radius: 6px;
 }
 
 p {
